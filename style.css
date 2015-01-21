@@ -32,9 +32,9 @@ This is still in progress and may not be a final version
 
 /* === main styles === */
 body {
-  min-width:360px;
-  background:#fff;
-  font-family:'Open Sans Condensed',sans-serif;
+   /*background:#8e8e8e;*/
+   min-width:360px;
+   font-family:'Open Sans Condensed',sans-serif;
 }
 #aria {
   position:fixed;
@@ -58,7 +58,12 @@ a:visited{color:#555;}
 
 
 /* === text === */
-p {font-size:1.3em; line-height:1.5em;}
+p {
+    font-family: "Ubuntu",sans-serif;
+    font-size: 1.3em;
+    font-weight: 100;
+    line-height: 1.8em;
+}
 strong {color:#00446a;}
 
 /* === headings === */
@@ -72,7 +77,10 @@ h1 {
     text-transform: uppercase;
 }
 h2{color:#0b345a;text-transform:uppercase;letter-spacing:5px;margin-bottom:20px;}
-h3{}
+h3 {
+    font-family: "Ubuntu",sans-serif;
+    font-weight: 400;
+}
 h4{}
 h5{}
 h6{}
@@ -147,10 +155,11 @@ aside {
 
 /* === page content === */
 #content {
-    background: none repeat scroll 0 0 #FFFFFF;
+    /*background: none repeat scroll 0 0 #c8d1d2;*/
     float: left;
     margin-bottom: 40px;
     margin-top: 33px;
+    padding: 15px;
     width: 100%;
 }
 #mainText {
@@ -205,9 +214,11 @@ margin-bottom:15px;
   float:left;
 }
 #archive-post-feature-image img {
-  width:200px;
-  height:auto;
-  margin-right:20px;
+    border: 2px solid #b9b7b7;
+    height: auto;
+    margin-right: 20px;
+    padding: 20px;
+    width: 200px;
 }
 .archive-post-excerpt-text {
     float: none;
@@ -353,7 +364,7 @@ footer {}
 @media screen and (max-width: 1600px) {
 .gallery-image {
   margin: 10px;
-  width: 160px;
+  width: 28.5%;
   height:auto;	
 }
 }

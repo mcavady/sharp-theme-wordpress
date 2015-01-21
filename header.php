@@ -8,6 +8,7 @@
     <meta name="keywords" content="HTML5,CSS,James, Mcavady, Home, Responsive, frame"/>
     <meta name="author" content="James Mcavady 2014 - HTML5 responsive sharp theme"/>
     <meta name="viewport" content="width=device-width"/>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,300,500,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/reset.css" type="text/css"/><!--reset the css for better browser compatibility -->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css"/><!--The main style of the pages-->
