@@ -211,11 +211,11 @@ margin-bottom:15px;
 }
 .archive-post-excerpt-text {
     float: none;
-    min-height: 490px;
+    /*min-height: 490px;*/
 }
 .archive-post-meta {
     background: none repeat scroll 0 0 #dbe6e6;
-    border: 1px solid #dedede;
+    border: 1px solid #DEDEDE;
     clear: both;
     float: left;
     margin-top: 40px;
