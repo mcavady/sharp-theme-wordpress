@@ -143,6 +143,10 @@ nav {
     margin-top: 10px;
     padding: 30px;
 }
+.menu li:hover {
+    background:none repeat scroll 0 0 #c5c0df;
+    color:#fff;
+}
 /* aside - below fold */
 #aside {
   width:96.6%;
@@ -222,7 +226,6 @@ margin-bottom:15px;
 }
 .archive-post-excerpt-text {
     float: none;
-    /*min-height: 490px;*/
 }
 .archive-post-meta {
     background: none repeat scroll 0 0 #dbe6e6;
@@ -234,9 +237,9 @@ margin-bottom:15px;
     text-align: right;
     width: 90%;
 }
-.archive-post-meta a{
-  margin-left:10px;
-  font-size:1em;
+.archive-post-meta a {
+    font-size: 0.7em;
+    margin-left: 10px;
 }
 .archive-post-meta p {
     color: #808080;
@@ -250,9 +253,17 @@ margin-bottom:15px;
     font-size: 1.3em;
     padding: 5px;
     text-align: left;
-    width: 90px;
+    width: 97.6%;
 }
-
+.read-more a {
+    font-size: 1em;
+    margin-left: 10px;
+    padding-right: 78%;
+}
+.read-more:hover {
+    background:none repeat scroll 0 0 #c5c0df;
+    color:#fff;
+}
 
 /* === single page content === */
 
