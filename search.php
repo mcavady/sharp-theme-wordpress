@@ -1,0 +1,4 @@
+/*Search*/
+<?php
+	echo "Search";
+?>

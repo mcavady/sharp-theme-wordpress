@@ -1,0 +1,422 @@
+/*
+Theme Name: Sharp
+Theme URI: http://JSMcavady.com/sharp
+Author: James Mcavady
+Author URI: http://jsmcavady.co.uk/
+Description: A sharp crisp theme for wordpress
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: James, mcavady, uk, sharp, clean, crisp, light, gallery
+Text Domain: sharp
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+This is still in progress and may not be a final version
+*/
+
+/**
+ * Table of Contents:
+**/
+
+/* === clear fixes === */
+
+#clear-footer{
+  width:100%;
+  height:95px;
+  float:right;
+}
+
+/* === admin bar for logged in - push below sticky nav === */
+
+/* === main styles === */
+body {
+  min-width:360px;
+  background:#fff;
+  font-family:'Open Sans Condensed',sans-serif;
+}
+#aria {
+  position:fixed;
+  left:-1000px;
+}
+
+/* === tagscloud width links */ 
+
+.tagcloud a{font-size:2em;}
+
+/* === Links - global === */
+
+a {
+    color: #666;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+a:hover{color:#777;}
+a:active{color:#555;}
+a:visited{color:#555;}
+
+
+/* === text === */
+p {font-size:1.3em; line-height:1.5em;}
+strong {color:#00446a;}
+
+/* === headings === */
+h1 {
+    border-bottom: 3px solid #dedede;
+    color: #000;
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: 2.3em;
+    letter-spacing: 8px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+h2{color:#0b345a;text-transform:uppercase;letter-spacing:5px;margin-bottom:20px;}
+h3{}
+h4{}
+h5{}
+h6{}
+
+/* === seperators === */
+.seperator {}
+
+/* === lists === */
+ul {}
+ol {}
+li {}
+
+/* === main container === */
+#container {
+  margin:0 auto;
+  width:85%;
+  min-width:365px;
+  max-width:1600px; /* keep looking nice for very large screens - above 1920px wide */
+  height:auto;
+}
+
+/* === top - branding and navigation === */
+#top {
+    background: none repeat scroll 0 0 #dbe6e6;
+    border-bottom: 4px solid #7a7a7a;
+    float: left;
+    min-height: 103px;
+    min-width: 400px;
+    width: 100%;
+}
+#logo {
+    float: left;
+    height: 103px;
+    padding-right: 20px;
+}
+#logo img {
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 200px;
+}
+#access {
+  float:right;
+}
+/*fix for mobile - if this has no float the nav will pop out of the dom*/
+nav {
+  float:right;
+}
+/* inner navigation wp-menu*/
+.menu {
+  float:right;
+}
+.menu ul {
+  float:left;
+}
+.menu li {
+    float: left;
+    list-style: outside none none;
+    margin-right: 30px;
+    margin-top: 10px;
+    padding: 30px;
+}
+/* aside - below fold */
+#aside {
+  width:96.6%;
+  margin-top:10px;  
+  margin:0 auto;
+}
+.center-the-aside {float:left;text-align:center;width:100%;}
+aside {
+}
+
+/* === page content === */
+#content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    margin-bottom: 40px;
+    margin-top: 33px;
+    width: 100%;
+}
+#mainText {
+  float:left;
+  margin:10px;
+  width:100%;
+}
+
+/* === post set as home page === */
+
+#feature-image img {
+  width:300px;
+  height:auto;
+  margin:10px;
+  float:left;
+}
+
+/* === post - single page === */
+
+#feature-image-single-page img {
+  width:300px;
+  height:auto;
+  margin:10px;
+  margin-right:20px;
+  float:left;
+}
+.post-content-single-page {
+  float:none;
+  min-height:270px;
+}
+.post-meta-single-page {
+    float: right;
+    font-size: 0.9em;
+    margin-top: 15px;
+}
+
+/* === archive - posts list - category === */
+.archive-post-container {
+  float:left;
+}
+
+.archive-post-excerpt {
+  float:left;
+  min-height:270px;
+  margin:10px;
+  width:46.7%;
+}
+.archive-post-excerpt h2{
+margin-bottom:15px;
+}
+#archive-post-feature-image {
+  float:left;
+}
+#archive-post-feature-image img {
+  width:200px;
+  height:auto;
+  margin-right:20px;
+}
+.archive-post-excerpt-text {
+    float: none;
+    min-height: 490px;
+}
+.archive-post-meta {
+    background: none repeat scroll 0 0 #dbe6e6;
+    border: 1px solid #dedede;
+    clear: both;
+    float: left;
+    margin-top: 40px;
+    padding: 10px;
+    text-align: right;
+    width: 90%;
+}
+.archive-post-meta a{
+  margin-left:10px;
+  font-size:1em;
+}
+.archive-post-meta p {
+    color: #808080;
+    float: left;
+    font-size: 0.7em;
+    margin-bottom: 20px;
+}
+.read-more {
+    background: none repeat scroll 0 0 #fff;
+    float: right;
+    font-size: 1.3em;
+    padding: 5px;
+    text-align: left;
+    width: 90px;
+}
+
+
+/* === single page content === */
+
+.single-page {
+    float: left;
+    margin-top: 20px;
+    width: 48%;
+}
+.single-page-content {
+  width:100%;
+}
+
+#page-feature-image img {
+  width:200px;
+  height:auto;
+  margin:10px;
+}
+
+/* === single page content === */
+
+.default-page {
+  width:100%;
+}
+.default-page-content {
+  text-align:center;
+  width:100%;
+}
+#default-page-feature-image {
+  width:200px;
+  float:left;
+  margin-right:15px;
+}
+#default-page-feature-image img {
+  width:200px;
+  height:auto;
+  float:none;
+}
+
+/* === widgets === */
+
+.widget {
+    background: none repeat scroll 0 0 #dbe6e6;
+    border: 2px solid #dedede;
+    float: left;
+    line-height: 2;
+    margin-left: 15px;
+    margin-top: 20px;
+    min-height: 360px;
+    width: 31%;
+}
+.widget-title {
+    margin: 30px auto 0;
+    text-align: center;
+    width: 220px;
+}
+#wp-calendar {
+    width:100%;
+}
+
+/* Gallery */
+.gallery {
+  float:left;
+  width:100%;
+}
+}
+.gallery-image {
+  margin:10px;
+  width:60px;
+  height:auto;	
+}
+.gallery-widget {
+    background: none repeat scroll 0 0 #dbe6e6;
+    border: 2px solid #ddd;
+    float: right;
+    margin-left: 12px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 48%;
+}
+/* === sticky footer === */
+#footer {
+  float:left;
+  background:#000;
+  opacity:0.8;
+  width:100%;
+  min-width:400px;
+  height:50px;
+  margin-top:15px;
+  clear:both;
+}
+footer {}
+#footerLinks {}
+.back-to-top {
+  float:right;
+  margin-right:10px;
+}
+.copyright {
+  float:right;
+  margin-right:20px;
+  margin-top:10px;
+}
+.copyright a{.archive-post-excerpt
+  color:#fff;
+  font-size:0.9em;
+}
+
+/* === media query === */
+
+@media screen and (max-width: 1600px) {
+.gallery-image {
+  margin: 10px;
+  width: 160px;
+  height:auto;	
+}
+}
+
+@media screen and (max-width: 960px) {
+
+.archive-post-excerpt {width:97%;}
+
+.single-page {
+  width:100%;
+}
+
+.gallery-widget {
+  width:100%;
+}
+.widget {
+    float: left;
+    line-height: 2;
+    margin-left: 15px;
+    margin-top: 20px;
+    min-height: 360px;
+    width: 45%;
+}
+
+}
+
+@media screen and (max-width: 620px) {
+html {margin-top:0px !important;}
+.widget {
+  float:left;
+  width:100%;
+  padding-left:15px;
+  min-height:200px;
+  margin-top:20px;
+  margin-left:0px;
+}
+#top {position:relative;}
+#content {margin-top:20px;}
+#footer{position:relative;bottom:0px;}
+.copyright {position:relative;bottom:40px;}
+.back-to-top{position:relative;bottom:40px;}
+
+}
+
+@media screen and (max-width: 400px) {
+
+#container {width:96.6%;}
+#access {width:200px;float:right;}
+#content {margin-top:20px;}
+.post-content-single-page p {clear:both;}
+#top {position:relative;}
+.widget {
+  float:left;
+  width:340px;
+  padding-left:15px;
+  min-height:200px;
+  margin-top:20px;
+  margin-left:0px;
+}
+.gallery-image {width:330px;}
+#footer{position:relative;bottom:0px;}
+.copyright {position:relative;bottom:40px;}
+.back-to-top{position:relative;bottom:40px;}
+}
+
+
