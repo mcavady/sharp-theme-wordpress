@@ -66,7 +66,7 @@ strong {color:#00446a;}
 /* === headings === */
 h1 {
     border-bottom: 3px solid #dedede;
-    color: #000;
+/*    color: #000;*/
     font-family: "Open Sans Condensed",sans-serif;
     font-size: 2.3em;
     letter-spacing: 8px;
@@ -74,14 +74,14 @@ h1 {
     text-transform: uppercase;
 }
 h2 {
-    color: #a046d1;
+    /*color: #a046d1;*/
     letter-spacing: 5px;
     margin-bottom: 10px;
     margin-top: 20px;
     text-transform: uppercase;
 }
 h3 {
-    color: #761ca7;
+    /*color: #761ca7;*/
     font-family: "Ubuntu",sans-serif;
     font-weight: 300;
     letter-spacing: 4px;
@@ -118,7 +118,6 @@ li {}
 }
 #logo {
     float: left;
-    height: 103px;
     padding-right: 20px;
 }
 #logo img {
@@ -137,10 +136,21 @@ nav {
     margin-top: 30px;
 }
 
+/* === Search form === */
 #searchform {
     float: left;
-    margin-top: 33px;
+    margin: 0 auto;
+    width: 100%;
 }
+.submit {
+    background: none repeat scroll 0 0 #000;
+    border: medium none;
+    color: #fff;
+    padding: 5px;
+}
+
+/* === input fields === */
+.field {padding:5px;}
 
 /* === inner navigation wp-menu === */
 .menu {
@@ -270,15 +280,13 @@ aside {
   color: #808080;
   float: left;
   font-size: 0.7em;
-  margin-bottom: 20px;
-  display:none;
+  margin-top: 11px;
 }
 .read-more {
   float: right;
   font-size: 1.3em;
   padding: 5px;
   text-align: right;
-  width: 98.6%;
 }
 .read-more a {
   font-size: 1em;
@@ -356,6 +364,22 @@ aside {
   padding: 10px;
   width: 48%;
 }
+
+/* === Tables === */
+table {border:2px solid #000;}
+thead {background:#000;}
+tbody {background:#ff9000;}
+td {
+    background: none repeat scroll 0 0 #ff9000;
+    padding: 10px;
+}
+tr {background:#fff;}
+th {
+    background: none repeat scroll 0 0 #ddd;
+    padding: 10px;
+}
+tfoot {}
+
 
 /* === wpcf7-form - contact form === */
 .wpcf7-form {

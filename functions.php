@@ -30,13 +30,13 @@ function register_my_menu() {
 
 
 $defaults = array(
-        'header-text'            => false,
-	'default-color'          => '',
-        'default-text-color'     => '000',
-	'default-image'          => '',
-	'default-repeat'         => '',
-	'default-position-x'     => '',
-	'default-attachment'     => '',
+        'header-text'            => true,
+	'default-color'          => '000',
+//        'default-text-color'     => '000',
+//	'default-image'          => '',
+//	'default-repeat'         => '',
+//	'default-position-x'     => '',
+//	'default-attachment'     => '',
 	'wp-head-callback'       => '_custom_background_cb',
 	'admin-head-callback'    => '',
 	'admin-preview-callback' => ''

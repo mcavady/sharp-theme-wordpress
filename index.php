@@ -11,7 +11,9 @@
 ?>
 
 <div id="content" role="main">
-<h1><?php bloginfo('name'); ?></h1>
+<h1 class="site-title" style="color: #<?php header_textcolor(); ?>"><?php bloginfo('name'); ?></h1>
+<h2 class="site-description" style="color: #<?php header_textcolor(); ?>"><?php bloginfo('description'); ?> </h2>
+
 <div class="archive-post-container">
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
