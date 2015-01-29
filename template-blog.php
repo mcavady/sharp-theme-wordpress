@@ -6,8 +6,8 @@ Template Name: Blog archive
 <!-- Archive.php -->
 <?php get_header(); ?>
 <div id="content" role="main">
-<h1>Astro blog</h1>
-<div class="archive-post-container">      
+<h1><?php bloginfo('name'); ?></h1>
+<div class="archive-post-container">
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
       <div class="archive-post-excerpt">

@@ -11,7 +11,7 @@
 ?>
 
 <div id="content" role="main">
-<h1>Astro blog</h1>
+<h1><?php bloginfo('name'); ?></h1>
 <div class="archive-post-container">
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>

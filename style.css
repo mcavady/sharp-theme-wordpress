@@ -251,7 +251,7 @@ aside {
 }
 .archive-post-excerpt-text {
   float: none;
-  min-height: 530px;
+  min-height: 150px;
 }
 .archive-post-meta {
   border: 2px solid #DEDEDE;
