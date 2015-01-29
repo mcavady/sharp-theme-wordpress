@@ -1,19 +1,19 @@
 /*
 Theme Name: Sharp
-Theme URI: http://JSMcavady.com/sharp
+Theme URI: http://responsivedeveloper.com
 Author: James Mcavady
-Author URI: http://jsmcavady.co.uk/
+Author URI: http://www.responsivedeveloper.com/
 Description: A sharp crisp theme for wordpress
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: James, mcavady, uk, sharp, clean, crisp, light, gallery
+Tags: James, mcavady, uk, sharp, clean, crisp, light, gallery, responsive, developer
 Text Domain: sharp
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-This is still in progress and may not be a final version
+This is still in progress and may not be a final version and licence may change.
 */
 
 /**
@@ -32,7 +32,6 @@ This is still in progress and may not be a final version
 
 /* === main styles === */
 body {
-   /*background:#8e8e8e;*/
    min-width:320px;
    font-family:'Open Sans Condensed',sans-serif;
 }
@@ -42,11 +41,9 @@ body {
 }
 
 /* === tagscloud width links */ 
-
 .tagcloud a{font-size:2em;}
 
 /* === Links - global === */
-
 a {
     color: #666;
     font-size: 1.2em;
@@ -55,7 +52,6 @@ a {
 a:hover{color:#777;text-decoration:underline;}
 a:active{color:#555;}
 a:visited{color:#555;}
-
 
 /* === text === */
 p {
@@ -83,24 +79,6 @@ h2 {
     margin-bottom: 10px;
     margin-top: 20px;
     text-transform: uppercase;
-}
-h2:before {
-    background: url("http://preview.responsivedeveloper.com/astrovine/wp-content/uploads/2015/01/atrso-vine-media-bulletPoint-before.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-    content: "";
-    display: inline-block;
-    height: 2px;
-    margin: 0;
-    padding: 10px;
-    width: 25px;
-}
-h2:after {
-    background: url("http://preview.responsivedeveloper.com/astrovine/wp-content/uploads/2015/01/atrso-vine-media-bulletPoint.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-    content: "";
-    display: inline-block;
-    height: 2px;
-    margin: 0;
-    padding: 10px;
-    width: 15px;
 }
 h3 {
     font-family: "Ubuntu",sans-serif;
@@ -144,10 +122,11 @@ li {}
     margin-top: 15px;
     width: 320px;
 }
+
+/* === navigation === */
 #access {
   float:right;
 }
-/*fix for mobile - if this has no float the nav will pop out of the dom*/
 nav {
     float: right;
     margin-top: 30px;
@@ -158,7 +137,7 @@ nav {
     margin-top: 33px;
 }
 
-/* inner navigation wp-menu*/
+/* === inner navigation wp-menu === */
 .menu {
   float:right;
 }
@@ -187,10 +166,10 @@ nav {
 }
 .menu li:hover > .sub-menu {display:block;z-index:999;}
 
-/* sub-menu */
+/* === sub-menu === */
 .sub-menu {width:50%; margin:0 auto;}
 
-/* aside - below fold */
+/* === aside - below fold === */
 #aside {
   width:96.6%;
   margin-top:10px;  
@@ -202,12 +181,11 @@ aside {
 
 /* === page content === */
 #content {
-    /*background: none repeat scroll 0 0 #c8d1d2;*/
-    float: left;
-    margin-bottom: 40px;
-    margin-top: 33px;
-    padding: 15px;
-    width: 100%;
+  float: left;
+  margin-bottom: 40px;
+  margin-top: 33px;
+  padding: 15px;
+  width: 100%;
 }
 #mainText {
   float:left;
@@ -216,7 +194,6 @@ aside {
 }
 
 /* === post set as home page === */
-
 #feature-image img {
   width:300px;
   height:auto;
@@ -225,7 +202,6 @@ aside {
 }
 
 /* === post - single page === */
-
 #feature-image-single-page img {
   width:300px;
   height:auto;
@@ -238,10 +214,10 @@ aside {
   min-height:270px;
 }
 .post-meta-single-page {
-    display: none;
-    float: right;
-    font-size: 0.9em;
-    margin-top: 15px;
+  display: none;
+  float: right;
+  font-size: 0.9em;
+  margin-top: 15px;
 }
 
 /* === archive - posts list - category === */
@@ -250,89 +226,69 @@ aside {
 }
 
 .archive-post-excerpt {
-    float: left;
-    margin: 10px;
-    min-height: 730px;
-    width: 46.7%;
+  float: left;
+  margin: 10px;
+  min-height: 730px;
+  width: 46.7%;
 }
 .archive-post-excerpt h2{
-    margin-bottom:15px;
+  margin-bottom:15px;
 }
 #archive-post-feature-image {
   float:left;
 }
 #archive-post-feature-image img {
-    border: 2px solid #b9b7b7;
-    height: auto;
-    margin-right: 20px;
-    padding: 20px;
-    width: 200px;
+  border: 2px solid #b9b7b7;
+  height: auto;
+  margin-right: 20px;
+  padding: 20px;
+  width: 200px;
 }
 .archive-post-excerpt-text {
-    float: none;
-    min-height: 530px;
+  float: none;
+  min-height: 530px;
 }
 .archive-post-meta {
-    /*background: none repeat scroll 0 0 #dbe6e6;*/
-    border: 2px solid #DEDEDE;
-    clear: both;
-    float: left;
-    margin-top: 40px;
-    padding: 10px;
-    text-align: right;
-    width: 93.6%;
+  border: 2px solid #DEDEDE;
+  clear: both;
+  float: left;
+  margin-top: 40px;
+  padding: 10px;
+  text-align: right;
+  width: 93.6%;
 }
 .archive-post-meta a {
-    font-size: 0.7em;
-    margin-left: 10px;
+  font-size: 0.7em;
+  margin-left: 10px;
 }
 .archive-post-meta p {
-    color: #808080;
-    float: left;
-    font-size: 0.7em;
-    margin-bottom: 20px;
-    display:none;
+  color: #808080;
+  float: left;
+  font-size: 0.7em;
+  margin-bottom: 20px;
+  display:none;
 }
 .read-more {
-    /*background: none repeat scroll 0 0 #fff;*/
-    float: right;
-    font-size: 1.3em;
-    padding: 5px;
-    text-align: right;
-    width: 98.6%;
+  float: right;
+  font-size: 1.3em;
+  padding: 5px;
+  text-align: right;
+  width: 98.6%;
 }
-/*
-.read-more:after {
-    background: url("http://preview.responsivedeveloper.com/astrovine/wp-content/uploads/2015/01/atrso-vine-media-bulletPoint.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-    content: "";
-    display: inline-block;
-    height: 2px;
-    margin: 0;
-    padding: 10px;
-    width: 15px;
-}*/
 .read-more a {
-    font-size: 1em;
-    margin-left: 10px;
-    /*padding-right: 50%;*/
+  font-size: 1em;
+  margin-left: 10px;
 }
-/*
-.read-more:hover {
-    background:none repeat scroll 0 0 #c5c0df;
-    color:#fff;
-}
-*/
-/* === single page content === */
 
+/* === single page content === */
 .single-page {
-    float: left;
-    margin-top: 20px;
-    width: 48%;
+  float: left;
+  margin-top: 20px;
+  width: 48%;
 }
 .single-page-content {
   width:100%;
 }
-
 #page-feature-image img {
   width:200px;
   height:auto;
@@ -340,7 +296,6 @@ aside {
 }
 
 /* === single page content === */
-
 .default-page {
   width:100%;
 }
@@ -360,29 +315,27 @@ aside {
 }
 
 /* === widgets === */
-
 .widget {
-    border: 3px solid #cecece;
-    float: left;
-    line-height: 2;
-    margin-left: 15px;
-    margin-top: 20px;
-    min-height: 460px;
-    width: 30%;
+  border: 3px solid #cecece;
+  float: left;
+  line-height: 2;
+  margin-left: 15px;
+  margin-top: 20px;
+  min-height: 460px;
+  width: 30%;
 }
 .widget-title {
-    margin: 30px auto 0;
-    text-align: center;
+  margin: 30px auto 0;
+  text-align: center;
 }
 #wp-calendar {
-    width:100%;
+  width:100%;
 }
 
-/* Gallery */
+/* === Gallery === */
 .gallery {
   float:left;
   width:100%;
-}
 }
 .gallery-image {
   margin:10px;
@@ -390,41 +343,41 @@ aside {
   height:auto;	
 }
 .gallery-widget {
-    background: none repeat scroll 0 0 #dbe6e6;
-    border: 2px solid #ddd;
-    float: right;
-    margin-left: 12px;
-    margin-top: 20px;
-    padding: 10px;
-    width: 48%;
+  background: none repeat scroll 0 0 #dbe6e6;
+  border: 2px solid #ddd;
+  float: right;
+  margin-left: 12px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 48%;
 }
 
 /* === wpcf7-form - contact form === */
 .wpcf7-form {
-    float:left;
-    padding:15px;
+  float:left;
+  padding:15px;
 }
 .wpcf7-form p {
-    clear: both;
-    float: left;
+  clear: both;
+  float: left;
 }
 .wpcf7-form input {
-    font-size: 1.2em;
-    width: 100%;
+  font-size: 1.2em;
+  width: 100%;
 }
 .wpcf7-form textarea {width:100%;}
 
 /* === sticky footer === */
 #footer {
-    background: none repeat scroll 0 0 #fff;
-    clear: both;
-    float: left;
-    margin-top: 15px;
-    min-width: 320px;
-    opacity: 0.8;
-    padding-bottom: 14px;
-    width: 100%;
-    border-top:3px solid #ddd;
+  background: none repeat scroll 0 0 #fff;
+  clear: both;
+  float: left;
+  margin-top: 15px;
+  min-width: 320px;
+  opacity: 0.8;
+  padding-bottom: 14px;
+  width: 100%;
+  border-top:3px solid #ddd;
 }
 footer {}
 #footerLinks {}
@@ -450,23 +403,21 @@ footer {}
 }
 
 /* === media query === */
-
 @media screen and (max-width: 1600px) {
 .gallery-image {
   margin: 10px;
   width: 28.5%;
   height:auto;	
 }
+
 }
 
 @media screen and (max-width: 960px) {
 
 .archive-post-excerpt {width:97%;}
-
 .single-page {
   width:100%;
 }
-
 .gallery-widget {
   width:100%;
 }

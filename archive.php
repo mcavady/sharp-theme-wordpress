@@ -1,4 +1,16 @@
 <!-- Archive.php -->
+<?php
+/**
+ * The Template for index.
+ *
+ * @package WordPress
+ * @subpackage sharp
+ * @since sharp 1.0
+ */
+
+?>
+
+
 <?php get_header(); ?>
 <div id="content" role="main">
 <h1>Astro blog</h1>

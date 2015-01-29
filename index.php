@@ -1,8 +1,18 @@
 <!-- index.php -->
-<?php get_header(); ?>
+<?php get_header(); 
+/**
+ * The Template for index.
+ *
+ * @package WordPress
+ * @subpackage sharp
+ * @since sharp 1.0
+ */
+
+?>
+
 <div id="content" role="main">
 <h1>Astro blog</h1>
-<div class="archive-post-container">      
+<div class="archive-post-container">
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
       <div class="archive-post-excerpt">

@@ -5,7 +5,7 @@
  * The Template for displaying all single posts.
  *
  * @package sharp
- * @since sharp
+ * @since sharp 1.0
  */
 
 ?>
