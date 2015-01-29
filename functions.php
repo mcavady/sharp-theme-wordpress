@@ -28,11 +28,29 @@ function register_my_menu() {
   register_nav_menu('header-menu',__( 'Header Menu' ));
 }
 
+
+$defaults = array(
+        'header-text'            => false,
+	'default-color'          => '',
+        'default-text-color'     => '000',
+	'default-image'          => '',
+	'default-repeat'         => '',
+	'default-position-x'     => '',
+	'default-attachment'     => '',
+	'wp-head-callback'       => '_custom_background_cb',
+	'admin-head-callback'    => '',
+	'admin-preview-callback' => ''
+);
+
 add_theme_support( 'post-thumbnails' );
 
 add_action( 'init', 'register_my_menu' );
 
-add_theme_support( 'custom-header' );
+add_theme_support( 'custom-header', $defaults );
+
+add_theme_support( 'custom-background', $defaults );
+
+add_theme_support( 'html5', array( 'search-form' ) );
 ?>
 
 <?php

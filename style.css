@@ -33,7 +33,7 @@ This is still in progress and may not be a final version
 /* === main styles === */
 body {
    /*background:#8e8e8e;*/
-   min-width:360px;
+   min-width:320px;
    font-family:'Open Sans Condensed',sans-serif;
 }
 #aria {
@@ -52,7 +52,7 @@ a {
     font-size: 1.2em;
     text-decoration: none;
 }
-a:hover{color:#777;}
+a:hover{color:#777;text-decoration:underline;}
 a:active{color:#555;}
 a:visited{color:#555;}
 
@@ -63,6 +63,7 @@ p {
     font-size: 1.3em;
     font-weight: 100;
     line-height: 1.8em;
+    min-height: 25px;
 }
 strong {color:#00446a;}
 
@@ -76,7 +77,31 @@ h1 {
     margin-bottom: 25px;
     text-transform: uppercase;
 }
-h2{color:#0b345a;text-transform:uppercase;letter-spacing:5px;margin-bottom:20px;}
+h2 {
+    color: #a046d1;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+h2:before {
+    background: url("http://preview.responsivedeveloper.com/astrovine/wp-content/uploads/2015/01/atrso-vine-media-bulletPoint-before.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    margin: 0;
+    padding: 10px;
+    width: 25px;
+}
+h2:after {
+    background: url("http://preview.responsivedeveloper.com/astrovine/wp-content/uploads/2015/01/atrso-vine-media-bulletPoint.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    margin: 0;
+    padding: 10px;
+    width: 15px;
+}
 h3 {
     font-family: "Ubuntu",sans-serif;
     font-weight: 400;
@@ -97,18 +122,15 @@ li {}
 #container {
   margin:0 auto;
   width:85%;
-  min-width:365px;
+  min-width:320px;
   max-width:1600px; /* keep looking nice for very large screens - above 1920px wide */
   height:auto;
 }
 
 /* === top - branding and navigation === */
 #top {
-    background: none repeat scroll 0 0 #dbe6e6;
-    border-bottom: 4px solid #7a7a7a;
     float: left;
-    min-height: 103px;
-    min-width: 400px;
+    min-width: 320px;
     width: 100%;
 }
 #logo {
@@ -120,33 +142,54 @@ li {}
     float: left;
     margin-left: 15px;
     margin-top: 15px;
-    width: 200px;
+    width: 320px;
 }
 #access {
   float:right;
 }
 /*fix for mobile - if this has no float the nav will pop out of the dom*/
 nav {
-  float:right;
+    float: right;
+    margin-top: 30px;
 }
+
+#searchform {
+    float: left;
+    margin-top: 33px;
+}
+
 /* inner navigation wp-menu*/
 .menu {
   float:right;
 }
 .menu ul {
-  float:left;
+    background: none repeat scroll 0 0 #fdc2fd;
+    border-bottom: 3px solid #000;
+    border-top: 3px solid #000;
+    display: none;
+    float: left;
+    left: 0;
+    margin-top: 30px;
+    position: absolute;
+    width: 100%;
 }
 .menu li {
     float: left;
     list-style: outside none none;
-    margin-right: 30px;
-    margin-top: 10px;
-    padding: 30px;
+    margin-right: 20px;
+    margin-top: 0;
+    padding: 15px;
 }
+.menu li a{float:left; }
 .menu li:hover {
     background:none repeat scroll 0 0 #c5c0df;
     color:#fff;
 }
+.menu li:hover > .sub-menu {display:block;z-index:999;}
+
+/* sub-menu */
+.sub-menu {width:50%; margin:0 auto;}
+
 /* aside - below fold */
 #aside {
   width:96.6%;
@@ -195,6 +238,7 @@ aside {
   min-height:270px;
 }
 .post-meta-single-page {
+    display: none;
     float: right;
     font-size: 0.9em;
     margin-top: 15px;
@@ -206,13 +250,13 @@ aside {
 }
 
 .archive-post-excerpt {
-  float:left;
-  min-height:270px;
-  margin:10px;
-  width:46.7%;
+    float: left;
+    margin: 10px;
+    min-height: 730px;
+    width: 46.7%;
 }
 .archive-post-excerpt h2{
-margin-bottom:15px;
+    margin-bottom:15px;
 }
 #archive-post-feature-image {
   float:left;
@@ -226,16 +270,17 @@ margin-bottom:15px;
 }
 .archive-post-excerpt-text {
     float: none;
+    min-height: 530px;
 }
 .archive-post-meta {
-    background: none repeat scroll 0 0 #dbe6e6;
-    border: 1px solid #DEDEDE;
+    /*background: none repeat scroll 0 0 #dbe6e6;*/
+    border: 2px solid #DEDEDE;
     clear: both;
     float: left;
     margin-top: 40px;
     padding: 10px;
     text-align: right;
-    width: 90%;
+    width: 93.6%;
 }
 .archive-post-meta a {
     font-size: 0.7em;
@@ -246,25 +291,37 @@ margin-bottom:15px;
     float: left;
     font-size: 0.7em;
     margin-bottom: 20px;
+    display:none;
 }
 .read-more {
-    background: none repeat scroll 0 0 #fff;
+    /*background: none repeat scroll 0 0 #fff;*/
     float: right;
     font-size: 1.3em;
     padding: 5px;
-    text-align: left;
-    width: 97.6%;
+    text-align: right;
+    width: 98.6%;
 }
+/*
+.read-more:after {
+    background: url("http://preview.responsivedeveloper.com/astrovine/wp-content/uploads/2015/01/atrso-vine-media-bulletPoint.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    margin: 0;
+    padding: 10px;
+    width: 15px;
+}*/
 .read-more a {
     font-size: 1em;
     margin-left: 10px;
-    padding-right: 78%;
+    /*padding-right: 50%;*/
 }
+/*
 .read-more:hover {
     background:none repeat scroll 0 0 #c5c0df;
     color:#fff;
 }
-
+*/
 /* === single page content === */
 
 .single-page {
@@ -305,19 +362,17 @@ margin-bottom:15px;
 /* === widgets === */
 
 .widget {
-    background: none repeat scroll 0 0 #dbe6e6;
-    border: 2px solid #dedede;
+    border: 3px solid #cecece;
     float: left;
     line-height: 2;
     margin-left: 15px;
     margin-top: 20px;
-    min-height: 360px;
-    width: 31%;
+    min-height: 460px;
+    width: 30%;
 }
 .widget-title {
     margin: 30px auto 0;
     text-align: center;
-    width: 220px;
 }
 #wp-calendar {
     width:100%;
@@ -343,19 +398,37 @@ margin-bottom:15px;
     padding: 10px;
     width: 48%;
 }
+
+/* === wpcf7-form - contact form === */
+.wpcf7-form {
+    float:left;
+    padding:15px;
+}
+.wpcf7-form p {
+    clear: both;
+    float: left;
+}
+.wpcf7-form input {
+    font-size: 1.2em;
+    width: 100%;
+}
+.wpcf7-form textarea {width:100%;}
+
 /* === sticky footer === */
 #footer {
-  float:left;
-  background:#000;
-  opacity:0.8;
-  width:100%;
-  min-width:400px;
-  height:50px;
-  margin-top:15px;
-  clear:both;
+    background: none repeat scroll 0 0 #fff;
+    clear: both;
+    float: left;
+    margin-top: 15px;
+    min-width: 320px;
+    opacity: 0.8;
+    padding-bottom: 14px;
+    width: 100%;
+    border-top:3px solid #ddd;
 }
 footer {}
 #footerLinks {}
+#footerLinks a{ position:relative;top:-2px;}
 .back-to-top {
   float:right;
   margin-right:10px;
@@ -368,6 +441,12 @@ footer {}
 .copyright a{.archive-post-excerpt
   color:#fff;
   font-size:0.9em;
+}
+.copyright img {
+    margin-left: 5px;
+    margin-top: 10px;
+    position: relative;
+    top: 7px;
 }
 
 /* === media query === */
@@ -392,11 +471,12 @@ footer {}
   width:100%;
 }
 .widget {
+    border: 3px solid #cecece;
     float: left;
     line-height: 2;
     margin-left: 15px;
     margin-top: 20px;
-    min-height: 360px;
+    min-height: 460px;
     width: 45%;
 }
 
@@ -405,12 +485,7 @@ footer {}
 @media screen and (max-width: 620px) {
 html {margin-top:0px !important;}
 .widget {
-  float:left;
-  width:100%;
-  padding-left:15px;
-  min-height:200px;
-  margin-top:20px;
-  margin-left:0px;
+    width:100%;
 }
 #top {position:relative;}
 #content {margin-top:20px;}
@@ -423,18 +498,17 @@ html {margin-top:0px !important;}
 @media screen and (max-width: 400px) {
 
 #container {width:96.6%;}
-#access {width:200px;float:right;}
+#access {
+    float: left;
+    width: 100%;
+}
+.widget {
+    min-height: 530px;
+}
 #content {margin-top:20px;}
 .post-content-single-page p {clear:both;}
 #top {position:relative;}
-.widget {
-  float:left;
-  width:340px;
-  padding-left:15px;
-  min-height:200px;
-  margin-top:20px;
-  margin-left:0px;
-}
+
 .gallery-image {width:330px;}
 #footer{position:relative;bottom:0px;}
 .copyright {position:relative;bottom:40px;}

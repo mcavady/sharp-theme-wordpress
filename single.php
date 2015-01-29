@@ -1,6 +1,14 @@
 <!-- Single post -->
 
-<?php get_header(); ?>
+<?php get_header(); 
+/**
+ * The Template for displaying all single posts.
+ *
+ * @package sharp
+ * @since sharp
+ */
+
+?>
   <div id="content" role="main">
     <div id="mainText">
       <?php if (have_posts()) : ?>

@@ -15,19 +15,20 @@
     <link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico" />
     <?php wp_head(); ?>
   </head>
-  <body>
+  <body <?php body_class( $class ); ?>>
   <div id="very-top"></div>
-  <div id="aria"><!-- access for visually impared -->
+  <div id="aria"><!-- access for visually impaired -->
     <a href="#container" title="Go to the home page content.">Skip to the home page content</a>
     <a href="#access" title="Go to the site navigation.">Skip to the navigation</a>
   </div><!-- end aria -->
     <div id="top">
       <div id="logo" role="banner">
         <img src="<?php header_image(); ?>" height="<?php get_custom_header()->height; ?>" width="<?php get_custom_header()->width; ?>" alt="<?php bloginfo('name'); ?>" />
-      </div><!-- end the logo -->
+      </div><!-- end the logo -->  <?php get_search_form( $echo ); ?> 
       <div id="access">
         <nav role="navigation"><!-- HTML 5 nav -->
             <?php wp_nav_menu(); ?>
+	    
         </nav><!--end the nav -->
       </div><!-- end the access-->
     </div><!--end top-->
