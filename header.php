@@ -23,7 +23,9 @@
   </div><!-- end aria -->
     <div id="top">
       <div id="logo" role="banner">
-        <img src="<?php header_image(); ?>" height="<?php get_custom_header()->height; ?>" width="<?php get_custom_header()->width; ?>" alt="<?php bloginfo('name'); ?>" />
+        <a href="<?php echo site_url(); ?>">
+	    <img src="<?php header_image(); ?>" height="<?php get_custom_header()->height; ?>" width="<?php get_custom_header()->width; ?>" alt="<?php bloginfo('name'); ?>" />
+        </a>
       </div><!-- end the logo -->  <?php get_search_form( $echo ); ?> 
       <div id="access">
         <nav role="navigation"><!-- HTML 5 nav -->

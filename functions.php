@@ -22,6 +22,9 @@ function arphabet_widgets_init() {
     ) );
 }
 
+//supports woocommerce
+add_theme_support( 'woocommerce' );
+
 add_action( 'widgets_init', 'arphabet_widgets_init' );
 
 function register_my_menu() {
@@ -174,4 +177,15 @@ function register_gallery_widget() {
   register_widget( 'Gallery_Widget' );
 }
 add_action( 'widgets_init', 'register_gallery_widget' );
+?>
+
+<?php
+function mytheme_customize_register( $wp_customize ) {
+   //All our sections, settings, and controls will be added here
+	$wp_customize->add_section( 'mytheme_new_section_name' , array(
+    	'title'      => __( 'Visible Section Name', 'mytheme' ),
+    	'priority'   => 30,
+	) );
+}
+add_action( 'customize_register', 'mytheme_customize_register' );
 ?>
