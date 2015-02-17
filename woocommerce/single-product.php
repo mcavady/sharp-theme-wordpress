@@ -1,5 +1,4 @@
 <?php echo "single-product.php"; ?>
-
 <?php
 /**
  * The Template for displaying all single products.
@@ -52,4 +51,3 @@ get_header( 'shop' ); ?>
 	?>
 
 <?php get_footer( 'shop' ); ?>
-

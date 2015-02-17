@@ -69,4 +69,4 @@ $woocommerce_loop['loop']++;
 	<?php do_action( 'woocommerce_after_subcategory', $category ); ?>
 
 </li>
-
+blar

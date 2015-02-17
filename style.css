@@ -352,6 +352,9 @@ aside {
   margin: 30px auto 0;
   text-align: center;
 }
+.widget li {
+  background:transparent !important;
+}
 #wp-calendar {
   width:100%;
 }
@@ -459,6 +462,10 @@ footer {}
 .woocommerce-tabs ul.tabs {
     margin: 0 !important;
 }
+.woocommerce ul.products li.product .button {
+    margin-bottom:20px;
+}
+
 #tab-description {
     padding-left:20px;
     padding-bottom:20px;
@@ -479,6 +486,17 @@ footer {}
     margin-bottom: 1.618em;
     padding-top: 40px;
     width: 100%;
+}
+
+.woocommerce li {
+    background:#e5e5e5;
+    text-align:center;
+}
+.woocommerce .products .star-rating {
+    display: block;
+    float: none;
+    margin: 0 auto !important;
+    margin-bottom:20px !important;
 }
 
 #reviews{

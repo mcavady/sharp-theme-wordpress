@@ -32,7 +32,7 @@
             <?php wp_nav_menu(); ?>
         </nav><!--end the nav -->
 	<div class="breadcrumb">
-            <?php woocommerce_breadcrumb(); ?>
+            <?php  woocommerce_breadcrumb(); ?>
 	</div>
       </div><!-- end the access-->
     </div><!--end top-->
