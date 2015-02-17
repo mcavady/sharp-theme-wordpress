@@ -60,6 +60,8 @@ p {
     font-weight: 100;
     line-height: 1.8em;
     min-height: 25px;
+    padding-bottom: 25px;
+    text-align: left;
 }
 strong {color:#00446a;}
 
@@ -137,6 +139,14 @@ nav {
     margin-top: 30px;
 }
 
+/* === breadcrumb */
+.breadcrumb {
+    clear: both;
+    float: right;
+    margin-right: 80px;
+    margin-top: 60px;
+}
+
 /* === Search form === */
 #searchform {
     float: left;
@@ -198,8 +208,8 @@ aside {
 /* === page content === */
 #content {
   float: left;
-  margin-bottom: 40px;
-  margin-top: 33px;
+  margin-bottom: 0px;
+  margin-top: 0px;
   padding: 15px;
   width: 100%;
 }
@@ -371,7 +381,7 @@ table {border:2px solid #000;}
 thead {background:#000;}
 tbody {background:#ff9000;}
 td {
-    background: none repeat scroll 0 0 #ff9000;
+/*  background: none repeat scroll 0 0 #ff9000;*/
     padding: 10px;
 }
 tr {background:#fff;}
@@ -435,7 +445,11 @@ footer {}
 }
 
 /* === woo commerce === */
-
+.woocommerce div.product .product_title {
+    clear: none;
+    margin-top: 0;
+    padding: 0 0 20px !important;
+}
 .woocommerce div.product .woocommerce-tabs .panel {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
@@ -450,6 +464,21 @@ footer {}
     padding-bottom:20px;
     padding-right:20px;
     border-bottom:1px solid #ddd;
+}
+.woocommerce table.shop_attributes td {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+    border-top: 0 none;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    padding-left:20px !important;
+}
+.woocommerce table.shop_attributes {
+    border-width: 1px 0 0;
+    margin-bottom: 1.618em;
+    padding-top: 40px;
+    width: 100%;
 }
 
 #reviews{
