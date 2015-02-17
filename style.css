@@ -343,7 +343,7 @@ aside {
   border: 3px solid #cecece;
   float: left;
   line-height: 2;
-  margin-left: 15px;
+  margin-left: 2%;
   margin-top: 20px;
   min-height: 460px;
   width: 30%;
@@ -520,6 +520,14 @@ p.demo_store {
     padding-right:20px;
     border-bottom:1px solid #ddd;
 }
+
+.woocommerce .related ul li.product, .woocommerce .related ul.products li.product, .woocommerce .upsells.products ul li.product, .woocommerce .upsells.products ul.products li.product, .woocommerce-page .related ul li.product, .woocommerce-page .related ul.products li.product, .woocommerce-page .upsells.products ul li.product, .woocommerce-page .upsells.products ul.products li.product {
+    width: 30% !important;
+    float:left;
+    clear:none;
+    margin-left:20px;
+}
+
 /* === media query === */
 @media screen and (max-width: 2054px) {
 .product-grid-sinlge {
@@ -552,7 +560,6 @@ p.demo_store {
     border: 3px solid #cecece;
     float: left;
     line-height: 2;
-    margin-left: 15px;
     margin-top: 20px;
     min-height: 460px;
     width: 45%;
