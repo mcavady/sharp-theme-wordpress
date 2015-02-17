@@ -190,7 +190,6 @@ function mytheme_customize_register( $wp_customize ) {
 add_action( 'customize_register', 'mytheme_customize_register' );
 ?>
 
-/* change the number of related products shown*/
 <?php
 // Redefine woocommerce_output_related_products()
 
@@ -203,14 +202,14 @@ add_action( 'customize_register', 'mytheme_customize_register' );
 *
 */
 function woo_related_products_limit() {
-global $product;
-$args['posts_per_page'] = 6;
-return $args;
+	global $product;
+	$args['posts_per_page'] = 6;
+	return $args;
 }
 add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
 function jk_related_products_args( $args ) {
-$args['posts_per_page'] = 3; // 4 related products
-$args['columns'] = 1; // arranged in 2 columns
-return $args;
-} 
+	$args['posts_per_page'] = 3; // 4 related products
+	$args['columns'] = 1; // arranged in 2 columns
+	return $args;
+}
 ?>
