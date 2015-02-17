@@ -2,7 +2,6 @@
 <!-- footer -->
   <div id="footer" role="contentinfo">
     <footer><!--html5 footer -->
-      <?php wp_footer(); ?>
     <div class="copyright">
 	<p><a href="www.responsivedeveloper.com" title="copyright">Copyright © www.responsivedeveloper.com</a>
 	<a href="www.responsivedeveloper.com" title="copyright">
@@ -12,4 +11,6 @@
     </div>
     </footer><!--html5 footer end-->
   </div><!--end the footer-->
+      <?php wp_footer(); ?>
+
 </body>

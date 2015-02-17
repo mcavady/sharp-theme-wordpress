@@ -38,7 +38,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 	$classes[] = 'last';
 ?>
 <li <?php post_class( $classes ); ?>>
-<div class="product-grid-sinlge" style="min-height:436px;">
+<div class="product-grid-sinlge">
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
 
 	<a href="<?php the_permalink(); ?>">
