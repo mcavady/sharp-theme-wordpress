@@ -168,7 +168,7 @@ nav {
   float:right;
 }
 .menu ul {
-    background: none repeat scroll 0 0 #fdc2fd;
+    background: none repeat scroll 0 0 #ccdded;
     border-bottom: 3px solid #000;
     border-top: 3px solid #000;
     display: none;
@@ -304,6 +304,7 @@ aside {
   margin-left: 10px;
 }
 
+
 /* === single page content === */
 .single-page {
   float: left;
@@ -358,6 +359,21 @@ aside {
 #wp-calendar {
   width:100%;
 }
+
+/* === post content === */
+.alignleft {
+    float: left;
+}
+.wp-caption {min-height:260px;}
+
+
+#feature-image-single-page {
+    border: 1px solid #000;
+    float: left;
+    margin-right: 30px;
+    min-height: 290px;
+}
+
 
 /* === Gallery === */
 .gallery {
@@ -435,8 +451,8 @@ footer {}
   margin-top:10px;
   font-size:10px;
 }
-.copyright a{.archive-post-excerpt
-  color:#fff;
+.copyright a{
+  color:#000;
   font-size:0.9em;
 }
 .copyright img {
